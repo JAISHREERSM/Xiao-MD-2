@@ -29,7 +29,7 @@ console.log(color(figlet.textSync('XIAO Bot', {
 		vertivalLayout: 'default',
 	    	width: 80,
 		whitespaceBreak: true
-        }), 'RED'))
+        }), 'red'))
 
 console.log(color('\n👑 Hello, I am NEXUS, the main Developer of this bot.\n\n Thanks for using : Xiao-MD-2 Bot','aqua'))
 console.log(color('\n👑 You can follow me on GitHub : NEXUSAT12','aqua'))
