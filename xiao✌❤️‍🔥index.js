@@ -16,9 +16,24 @@ const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 const { TelegraPh } = require('./lib/uploader')
 const moment = require('moment-timezone')
+const figlet = require('figlet')
 const getRandom = (ext) => {
 	return `${Math.floor(Math.random() * 10000)}${ext}`
 }
+
+
+async function startNEXUS() {
+console.log(color(figlet.textSync('XIAO Bot', {
+		font: 'Pagga',
+		horizontalLayout: 'default',
+		vertivalLayout: 'default',
+	    	width: 80,
+		whitespaceBreak: true
+        }), 'RED'))
+
+console.log(color('\n👑 Hello, I am NEXUS, the main Developer of this bot.\n\n Thanks for using : Xiao-MD-2 Bot','aqua'))
+console.log(color('\n👑 You can follow me on GitHub : NEXUSAT12','aqua'))
+console.log(color('\n👑 You can follow me on Instagram : at__010','aqua'))
 
 var low
 try {
@@ -73,7 +88,7 @@ async function startNEXUS() {
     const NEXUS = NEXUSConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['XBOT2 MD','Safari','1.0.0'],
+        browser: ['Xiao-MD-2','Safari','1.0.0'],
         auth: state
     })
 
